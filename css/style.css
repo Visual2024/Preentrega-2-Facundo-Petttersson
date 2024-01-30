@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to left, #44444e, #245e27);
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-image: linear-gradient(to left, #44444e, #245e27);
+}
+.container-header .logo {
+  margin: 1rem;
+}
+.container-header .navegacion {
+  display: flex;
+  flex-direction: row;
+}
+.container-header .item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container-header .item #nav-item, .container-header .item #nav-item-a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 5px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "title title";
+}
+.container .container-title {
+  grid-area: title;
+}
+.container .container-title .title {
+  margin-top: 3rem;
+  text-align: center;
+}
+.container .container-seccion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "article1 article2";
+}
+.container .container-seccion .container-article {
+  margin: 10px;
+  margin-bottom: 1rem;
+  grid-area: article1;
+}
+.container .container-seccion .container-article p {
+  padding: 1rem;
+}
+.container .container-seccion .container-article_2 {
+  margin: 10px;
+  margin-bottom: 1rem;
+  grid-area: article2;
+}
+.container .container-seccion .container-article_2 p {
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
